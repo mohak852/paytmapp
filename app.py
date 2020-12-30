@@ -1,18 +1,14 @@
-from flask import Flask, jsonify, render_template
-from werkzeug.wrappers import Response
+from flask import Flask, jsonify
 from Checksum import generate_checksum
 app = Flask(__name__)
-@app.route('/hello')
-def hello():
-    return 'Hello, World!'
 
-@app.route('/checkout')
+@app.route('/')
 def checkout():
     MERCHANT_KEY = 'f8tI!05cG49PjgW6'
     param_dict = {
         'MID': 'fSduEn46698831465981',
-        'ORDER_ID': str("868464"),
-        'TXN_AMOUNT': str("565165"),
+        'ORDER_ID': str(868464),
+        'TXN_AMOUNT': str(565165),
         'CUST_ID': "abc@abc.com",
         'INDUSTRY_TYPE_ID': 'WEBSTAGING',
         'WEBSITE': 'DEFAULT',
