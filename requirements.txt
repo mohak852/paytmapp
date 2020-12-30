@@ -206,7 +206,6 @@ Pyphen==0.9.5
 PyRect==0.1.4
 pyRFC3339==1.1
 PyScreeze==0.1.26
-pytest==6.1.0
 pytest-cov==2.10.1
 python-apt==2.0.0+ubuntu0.20.4.2
 python-dateutil==2.7.3
